@@ -23,7 +23,14 @@ import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged, 
 import { getFirestore, collection, doc, getDocs, setDoc, updateDoc, onSnapshot, query, where, addDoc, Timestamp } from "firebase/firestore";
 
 // --- Firebase Configuration ---
-const firebaseConfig = JSON.parse(__firebase_config);
+const firebaseConfig = {
+  apiKey: "demo-key",
+  authDomain: "demo.firebaseapp.com",
+  projectId: "demo-project",
+  storageBucket: "demo-project.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef123456"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
