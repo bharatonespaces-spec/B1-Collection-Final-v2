@@ -212,11 +212,11 @@ export default function App() {
   const [userRole, setUserRole] = useState('admin'); // 'admin' or 'shankar'
   const [activeTab, setActiveTab] = useState('dashboard');
   const [simulatedDate, setSimulatedDate] = useState(new Date());
-  const [tenants, setTenants] = useState([]);
+  const [tenants, setTenants] = useStateINITIAL_TENANTS
   const [cashBalances, setCashBalances] = useState({ karunesh: 0, shankar: 0 });
   const [selectedTenant, setSelectedTenant] = useState(null);
   const [isCollecting, setIsCollecting] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   // --- Auth & Data Fetching ---
   useEffect(() => {
