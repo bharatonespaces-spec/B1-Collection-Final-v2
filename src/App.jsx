@@ -24,13 +24,13 @@ import { getFirestore, collection, doc, getDocs, setDoc, updateDoc, onSnapshot, 
 
 // --- Firebase Configuration ---
 const firebaseConfig = {
-  apiKey: "demo-key",
-  authDomain: "demo.firebaseapp.com",
-  projectId: "demo-project",
-  storageBucket: "demo-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef123456"
-};
+  apiKey: "AIzaSyBqOWnRgXyTjprZZn58C-F7pxed0mINpn",
+  authDomain: "bharat-one-spaces.firebaseapp.com",
+  projectId: "bharat-one-spaces",
+  storageBucket: "bharat-one-spaces.firebasestorage.app",
+  messagingSenderId: "221326819338",
+  appId: "1:221326819338:web:edb1a476b5e42415e19ff3",
+  measurementId: "G-5EKXWQ3GCD"};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
